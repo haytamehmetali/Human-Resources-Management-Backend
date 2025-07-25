@@ -1,0 +1,51 @@
+server:
+  port: ${PORT_NUMBER}
+
+spring:
+  security:
+    user:
+      name: ${SECURITY_NAME}
+      password: ${SECURITY_PASSWORD}
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: ${POST_GRE_USERNAME}
+    password: ${POST_GRE_PASSWORD}
+    url: ${POST_GRE_URL}
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        show_sql: false
+        format_sql: false
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${POST_MAIL_USERNAME}
+    password: ${POST_MAIL_PASSWORD}
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: true
+            required: true
+          auth: true
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
+#  Swagger...
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operations-sorter: method
+    tags-sorter: alpha
+  show-actuator: false
+
+
+java17:
+  jwt:
+    secret-key: ${JWT_SECRET_KEY}
+    issuer: ${JWT_ISSUER}
