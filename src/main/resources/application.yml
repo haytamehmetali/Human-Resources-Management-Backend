@@ -1,16 +1,16 @@
 server:
-  port: ${PORT_NUMBER}
+  port: 9090
 
 spring:
   security:
     user:
-      name: ${SECURITY_NAME}
-      password: ${SECURITY_PASSWORD}
+      name: human-resources-management-db
+      password: human-resources-management-db
   datasource:
     driver-class-name: org.postgresql.Driver
-    username: ${POST_GRE_USERNAME}
-    password: ${POST_GRE_PASSWORD}
-    url: ${POST_GRE_URL}
+    username: postgres
+    password: root
+    url: jdbc:postgresql://localhost:5432/human-resources-management-db
   jpa:
     show-sql: false
     hibernate:
@@ -22,8 +22,8 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 587
-    username: ${POST_MAIL_USERNAME}
-    password: ${POST_MAIL_PASSWORD}
+    username: projects060606@gmail.com
+    password: srtapagkmoxrmtjx
     properties:
       mail:
         smtp:
@@ -47,5 +47,5 @@ springdoc:
 
 java17:
   jwt:
-    secret-key: ${JWT_SECRET_KEY}
-    issuer: ${JWT_ISSUER}
+    secret-key: l6B5lk6GBovFp
+    issuer: Java17
