@@ -1,14 +1,14 @@
 ## 💼 HumanResourcesManagement-Backend
 
-QuickHR is a web-based application developed to **optimize and streamline human resources workflows** for organizations of all sizes.
+HumanResourcesManagement is a web-based application developed to **optimize and streamline human resources workflows** for organizations of all sizes.
 
 
 ## 📌 Project Description
 
-QuickHR offers a **modular HR management system** that simplifies the digital management of core HR functions including authentication, authorization, employee tracking, and administrative operations. It helps organizations efficiently manage users, roles, shifts, leaves, and more through intuitive dashboards and secure APIs.
+HumanResourcesManagement offers a **modular HR management system** that simplifies the digital management of core HR functions including authentication, authorization, employee tracking, and administrative operations. It helps organizations efficiently manage users, roles, shifts, leaves, and more through intuitive dashboards and secure APIs.
 
 
-## 📚 Used HR Modules
+## 📚 Used Modules
 
  🔐 **Authentication & Authorization** - Secure login with JWT & role-based access control  
  👥 **User Management** - Create, update, and manage system users  
@@ -22,7 +22,7 @@ QuickHR offers a **modular HR management system** that simplifies the digital ma
 
 ## 🚀 Key Features
 
- 📂 **Modular HR System Architecture**  
+ 📂 **Modular HR Management System Architecture**  
  🛡️ **Role-Based Access Control**  
  📧 **Email Verification & Account Activation**  
  📅 **Shift, Leave & Personnel Tracking**  
